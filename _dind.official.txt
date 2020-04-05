@@ -1,0 +1,4 @@
+# Official DinD
+
+docker build -t base-dind -f _dind.official.Dockerfile .
+docker run -it --rm --privileged base-dind

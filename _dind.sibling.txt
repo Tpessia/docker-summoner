@@ -1,0 +1,6 @@
+# Best Host
+# Uses the docker daemon from the host machine, creating sibling containers (without privileged)
+# https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
+
+docker build -t base-dind -f _dind.sibling.Dockerfile .
+docker run -it --rm -v //var/run/docker.sock:/var/run/docker.sock base-dind

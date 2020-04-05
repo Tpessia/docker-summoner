@@ -1,0 +1,5 @@
+# Best Guest
+# Manual DinD with Debian (Stretch) and Node.js
+
+docker build -t base-dind -f _dind.debian.node.Dockerfile .
+docker run -it --rm --privileged base-dind

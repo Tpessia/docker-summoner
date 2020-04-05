@@ -1,0 +1,4 @@
+# Manual DinD with Alpine (Not Working)
+
+docker build -t base-dind -f _dind.alpine.Dockerfile .
+docker run -it --rm --privileged base-dind

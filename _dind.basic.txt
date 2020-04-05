@@ -1,0 +1,4 @@
+# Manual DinD with Alpine from Official Docker (Not Woking)
+
+docker build -t base-dind -f _dind.basic.Dockerfile .
+docker run -it --rm --privileged base-dind

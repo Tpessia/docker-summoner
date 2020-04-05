@@ -1,0 +1,2 @@
+docker build -t docker-summoner -f _api.Dockerfile .
+docker run -it --rm --privileged -p 80:80 docker-summoner
